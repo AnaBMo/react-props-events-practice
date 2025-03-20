@@ -1,0 +1,257 @@
+const peliculas = [
+    {
+      genero: 'Comedia',
+      titulo: 'No mires arriba',
+      anio: 2021,
+      director: 'Adam McKay',
+      sinopsis:
+        'Dos astrónomos descubren un cometa que va a destruir la Tierra, pero nadie les cree.',
+      imagen: 'https://i.imgur.com/q77897Z.jpg',
+      valoracion: 7.2,
+      duracion: 138,
+    },
+    {
+      genero: 'Comedia',
+      titulo: 'El hombre invisible',
+      anio: 2020,
+      director: 'Leigh Whannell',
+      sinopsis:
+        'Una mujer es perseguida por su expareja, un científico que se ha vuelto invisible.',
+      imagen: 'https://i.imgur.com/nYH44MG.jpg',
+      valoracion: 7.1,
+      duracion: 124,
+    },
+    {
+      genero: 'Comedia',
+      titulo: 'Jojo Rabbit',
+      anio: 2019,
+      director: 'Taika Waititi',
+      sinopsis:
+        'Un niño en la Alemania nazi tiene como amigo imaginario a Hitler.',
+      imagen: 'https://i.imgur.com/q77897Z.jpg',
+      valoracion: 7.8,
+      duracion: 108,
+    },
+    {
+      genero: 'Comedia',
+      titulo: 'Cuchillos por la espalda',
+      anio: 2019,
+      director: 'Rian Johnson',
+      sinopsis: 'Un famoso detective investiga la muerte de un famoso novelista.',
+      imagen: 'https://i.imgur.com/nYH44MG.jpg',
+      valoracion: 7.9,
+      duracion: 130,
+    },
+    {
+      genero: 'Comedia',
+      titulo: 'Dolor y dinero',
+      anio: 2019,
+      director: 'Michael Bay',
+      sinopsis:
+        'Un entrenador de delfines se une a un estafador y a su novia para sacar provecho de un millonario.',
+      imagen: 'https://i.imgur.com/q77897Z.jpg',
+      valoracion: 7.1,
+      duracion: 132,
+    },
+    {
+      genero: 'Comedia',
+      titulo: 'La favorita',
+      anio: 2018,
+      director: 'Yorgos Lanthimos',
+      sinopsis:
+        'Dos mujeres compiten por la amistad de la reina Ana de Gran Bretaña.',
+      imagen: 'https://i.imgur.com/nYH44MG.jpg',
+      valoracion: 7.7,
+      duracion: 119,
+    },
+    {
+      genero: 'Comedia',
+      titulo: 'Lady Bird',
+      anio: 2017,
+      director: 'Greta Gerwig',
+      sinopsis:
+        'Una adolescente de Sacramento quiere mudarse a Nueva York para estudiar arte.',
+      imagen: 'https://i.imgur.com/q77897Z.jpg',
+      valoracion: 7.9,
+      duracion: 94,
+    },
+    {
+      genero: 'Comedia',
+      titulo: 'Tres anuncios por un crimen',
+      anio: 2017,
+      director: 'Martin McDonagh',
+      sinopsis:
+        'Una mujer coloca tres vallas publicitarias para denunciar la falta de progreso en la investigación del asesinato de su hija.',
+      imagen: 'https://i.imgur.com/nYH44MG.jpg',
+      valoracion: 8.1,
+      duracion: 115,
+    },
+    {
+      genero: 'Terror',
+      titulo: 'Hereditary',
+      anio: 2018,
+      director: 'Ari Aster',
+      sinopsis:
+        'Una familia se ve perseguida por una presencia maligna tras la muerte de su abuela.',
+      imagen: 'https://i.imgur.com/q77897Z.jpg',
+      valoracion: 7.3,
+      duracion: 127,
+    },
+    {
+      genero: 'Terror',
+      titulo: 'Midsommar',
+      anio: 2019,
+      director: 'Ari Aster',
+      sinopsis:
+        'Un grupo de amigos viaja a Suecia para celebrar un festival de verano, pero descubren que no es lo que esperaban.',
+      imagen: 'https://i.imgur.com/nYH44MG.jpg',
+      valoracion: 7.1,
+      duracion: 140,
+    },
+    {
+      genero: 'Terror',
+      titulo: 'El conjuro 2',
+      anio: 2016,
+      director: 'James Wan',
+      sinopsis:
+        'Los Warren investigan el caso de una familia que está siendo aterrorizada por una presencia paranormal en su casa.',
+      imagen: 'https://i.imgur.com/q77897Z.jpg',
+      valoracion: 7.7,
+      duracion: 134,
+    },
+    {
+      genero: 'Terror',
+      titulo: 'Expediente Warren: The Enfield Poltergeist',
+      anio: 2016,
+      director: 'James Wan',
+      sinopsis:
+        'Los Warren investigan el caso de una familia que está siendo aterrorizada por un poltergeist en su casa.',
+      imagen: 'https://i.imgur.com/nYH44MG.jpg',
+      valoracion: 7.6,
+      duracion: 112,
+    },
+    {
+      genero: 'Terror',
+      titulo: 'It',
+      anio: 2017,
+      director: 'Andrés Muschietti',
+      sinopsis:
+        'Un grupo de niños se enfrenta a un payaso asesino que se alimenta del miedo.',
+      imagen: 'https://i.imgur.com/q77897Z.jpg',
+      valoracion: 7.1,
+      duracion: 135,
+    },
+    {
+      genero: 'Terror',
+      titulo: 'Un lugar tranquilo',
+      anio: 2018,
+      director: 'John Krasinski',
+      sinopsis:
+        'Una familia debe vivir en silencio para evitar ser atacados por unas criaturas que cazan por el sonido.',
+      imagen: 'https://i.imgur.com/nYH44MG.jpg',
+      valoracion: 7.5,
+      duracion: 90,
+    },
+    {
+      genero: 'Terror',
+      titulo: 'Herencia',
+      anio: 2018,
+      director: 'Ari Aster',
+      sinopsis:
+        'Una familia se ve perseguida por una presencia maligna tras la muerte de su abuela.',
+      imagen: 'https://i.imgur.com/q77897Z.jpg',
+      valoracion: 7.3,
+      duracion: 127,
+    },
+  
+    {
+      genero: 'Acción',
+      titulo: 'Mad Max: Furia en la carretera',
+      anio: 2015,
+      director: 'George Miller',
+      sinopsis:
+        'En un mundo postapocalíptico, una feroz guerrera se une a un grupo de rebeldes para escapar del tirano Immortan Joe.',
+      imagen: 'https://i.imgur.com/q77897Z.jpg',
+      valoracion: 8.1,
+      duracion: 120,
+    },
+    {
+      genero: 'Acción',
+      titulo: 'John Wick: Chapter 3 - Parabellum',
+      anio: 2019,
+      director: 'Chad Stahelski',
+      sinopsis:
+        'John Wick es perseguido por todos los asesinos del mundo después de ser excomulgado por la Alta Mesa.',
+      imagen: 'https://i.imgur.com/nYH44MG.jpg',
+      valoracion: 7.1,
+      duracion: 131,
+    },
+    {
+      genero: 'Acción',
+      titulo: 'Misión Imposible: Fallout',
+      anio: 2018,
+      director: 'Christopher McQuarrie',
+      sinopsis:
+        'Ethan Hunt y su equipo se enfrentan a una nueva amenaza mientras intentan recuperar tres esferas de plutonio.',
+      imagen: 'https://i.imgur.com/q77897Z.jpg',
+      valoracion: 7.9,
+      duracion: 147,
+    },
+    {
+      genero: 'Acción',
+      titulo: 'Vengadores: Endgame',
+      anio: 2019,
+      director: 'Anthony Russo & Joe Russo',
+      sinopsis:
+        'Los Vengadores se reúnen para luchar contra Thanos y revertir el chasquido que borró a la mitad de la vida en el universo.',
+      imagen: 'https://i.imgur.com/nYH44MG.jpg',
+      valoracion: 8.5,
+      duracion: 181,
+    },
+    {
+      genero: 'Acción',
+      titulo: 'Black Panther',
+      anio: 2018,
+      director: 'Ryan Coogler',
+      sinopsis:
+        "T'Challa es coronado rey de Wakanda, pero se enfrenta a un desafío de un antiguo enemigo.",
+      imagen: 'https://i.imgur.com/q77897Z.jpg',
+      valoracion: 7.3,
+      duracion: 134,
+    },
+    {
+      genero: 'Acción',
+      titulo: 'Aquaman',
+      anio: 2018,
+      director: 'James Wan',
+      sinopsis:
+        'Arthur Curry, el hijo del rey de Atlantis, debe reclamar su lugar como rey y proteger el mundo de la superficie.',
+      imagen: 'https://i.imgur.com/nYH44MG.jpg',
+      valoracion: 7.2,
+      duracion: 143,
+    },
+    {
+      genero: 'Acción',
+      titulo: 'Capitán América: Civil War',
+      anio: 2016,
+      director: 'Anthony Russo & Joe Russo',
+      sinopsis:
+        'Los Vengadores se dividen en dos bandos tras la firma de los Acuerdos de Sokovia.',
+      imagen: 'https://i.imgur.com/q77897Z.jpg',
+      valoracion: 7.8,
+      duracion: 147,
+    },
+    {
+      genero: 'Acción',
+      titulo: 'Star Wars: Episodio VII - El despertar de la Fuerza',
+      anio: 2015,
+      director: 'J. J. Abrams',
+      sinopsis:
+        'Una joven chatarrera se une a la Resistencia en la lucha contra la Primera Orden.',
+      imagen: 'https://i.imgur.com/nYH44MG.jpg',
+      valoracion: 7.8,
+      duracion: 138,
+    },
+  ];
+  
+  export default peliculas;  
